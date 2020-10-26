@@ -1,0 +1,40 @@
+.bigRoom{
+    height: 1000px;
+    width: 1000px;
+    z-index: 100;
+    position: absolute;
+}
+
+.bigRoom.red{
+    background-color: red;
+}
+.bigRoom.green{
+    background-color: green;
+}
+.bigRoom.blue{
+    background-color: blue;
+}
+.bigRoom.yellow{
+    background-color: yellow;
+}
+
+.room {
+    height: 500px;
+    width: 500px;
+    border: 100px solid;
+    z-index: 10;
+    position: relative;
+}
+
+.room.red{
+    background-color: red;
+}
+.room.green{
+    background-color: green;
+}
+.room.blue{
+    background-color: blue;
+}
+.room.yellow{
+    background-color: yellow;
+}
