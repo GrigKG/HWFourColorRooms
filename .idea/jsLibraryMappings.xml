@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$/index.html" libraries="{HTTP Response Handler, react, react-dom}" />
-    <file url="file://$PROJECT_DIR$/script.js" libraries="{babel-standalone, react, react-dom}" />
+    <file url="file://$PROJECT_DIR$/index.html" libraries="{HTTP Response Handler, bootstrap, react, react-dom}" />
+    <file url="file://$PROJECT_DIR$/script.js" libraries="{HTTP Response Handler, babel-standalone, bootstrap, react, react-dom}" />
   </component>
 </project>

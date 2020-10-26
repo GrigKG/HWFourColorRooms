@@ -5,6 +5,12 @@
     position: absolute;
 }
 
+.room {
+    height: 500px;
+    width: 500px;
+    border: 100px solid;
+    position: relative;
+}
 .bigRoom.red{
     background-color: red;
 }
@@ -16,14 +22,6 @@
 }
 .bigRoom.yellow{
     background-color: yellow;
-}
-
-.room {
-    height: 500px;
-    width: 500px;
-    border: 100px solid;
-    z-index: 10;
-    position: relative;
 }
 
 .room.red{

@@ -7,39 +7,23 @@ class Room extends React.Component {
         }
         this.newTask = React.createRef();
     }
-    handlerClickBigRoom = () => {
+    handlerClickRoom = () => {
         this.state.colorBigRoom = this.props.roomColor;
-        this.setState({isBigRoom: true});
+        this.setState({isBigRoom: !this.state.isBigRoom});
     }
-
-    handlerClickLittleRoom = () => {
-        this.state.colorBigRoom = '';
-        this.setState({isBigRoom: false});
-    }
-    renderBigRoom = () =>{
+    renderRoom = (sizeRoom) =>{
         return (
-            <div onClick={this.handlerClickLittleRoom} className={'bigRoom ' + this.props.roomColor}></div>
+            <div onClick={this.handlerClickRoom} className={sizeRoom + this.props.roomColor}></div>
         );
     }
-
-    renderLittleRoom = () =>{
-        return (
-            <div onClick={this.handlerClickBigRoom} className={'room ' + this.props.roomColor}></div>
-        );
-    }
-
     render() {
-        if(this.state.isBigRoom) {
-            return this.renderBigRoom();
-        } else {
-            return this.renderLittleRoom();
-        }
+        const  sizeRoom = this.state.isBigRoom ? 'bigRoom ':'room ';
+        return this.renderRoom(sizeRoom);
     }
 }
 
 
-    class Hostel extends React.Component{
-
+class Hostel extends React.Component{
     constructor() {
         super();
         this.state={
